@@ -146,6 +146,7 @@ div.projrow-text {
 
 .tag-list-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 0.8em;
 }
