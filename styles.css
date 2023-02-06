@@ -52,7 +52,6 @@ div.head-title {
   font-weight: bold;
 }
 
-
 div.head-title a {
   font-size: 1.5em;
 }
@@ -142,7 +141,8 @@ div.projrow-text {
 .project-title {
   font-size: 1.3em;
   font-weight: bold;
-}
+} 
+
 
 .tag-list-container {
   display: flex;
@@ -220,7 +220,6 @@ code{
   font-size: initial;
   line-height: 1.4;
 }
-
 
 @media screen and (max-width: 50em) {
   div.page {
