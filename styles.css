@@ -2,11 +2,11 @@
   --main-bg-color: #f5f7fa;
   --main-text-color: black;
   --card-bg-color: white;
-  /* --card-bg-color: var(--main-bg-color); */
-  /* --normal-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); */
   --normal-shadow: none;
   --tag-text-color: var(--main-text-color);
   --code-bg: #fafafa;
+  --link-color: #0080ff;
+  --all-tags-color: white;
 }
 
 @media(prefers-color-scheme: dark) {
@@ -115,24 +115,19 @@ div.smallWidth-proj-title {
 }
 
 div.projrow-image {
-
   display: table-cell;
-
   width: 25%;
-  /* background-color: red; */
   align-items: center;
   vertical-align: middle;
 }
 
 div.projrow-image img {
   max-width: 100%;
-  /* background-color: green; */
   object-fit: contain;
 }
 
 div.projrow-text {
   display: table-cell;
-  /* background-color: blue; */
   text-align: left;
   align-items: center;
   vertical-align: text-top;
@@ -163,9 +158,36 @@ div.projrow-text {
   color: var(--tag-text-color);
 }
 
-.tag a {
-  text-decoration: none !important;
+.allTagsButton {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--link-color);
+  /* box-shadow: var(--normal-shadow); */
+  box-shadow: none;
   color: var(--tag-text-color);
+  border-style: solid;
+  border-color: var(--link-color);
+  transition: 0.3s;
+}
+
+
+.allTagsButton,
+.allTagsButton a,
+.allTagsButton a:visited,
+.allTagsButton a:hover,
+.allTagsButton a:active {
+  text-decoration: none;
+  color: var(--all-tags-color) !important;
+}
+
+.allTagsButton:hover {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--card-bg-color);
+  color:var(--main-text-color) !important;
+  border-color: var(--link-color);
+  border-style: solid;
+  /* background-color: red ; */
 }
 
 .content {
@@ -208,18 +230,46 @@ a,
 a:visited,
 a:hover,
 a:active {
-  color: #0080ff;
+  color: var(--link-color);
 }
 
 code{
   font-size: 15px !important;
-  padding: .25em .25em;
   background: var(--code-bg);
 }
 
+code {
+  padding: .5em;
+  border-radius: 5px;
+}
+
+.hljs > code {
+  padding: 0em 0em !important;
+}
 .hljs {
   font-size: initial;
   line-height: 1.4;
+
+}
+
+
+.tag a,
+.tag a:visited,
+.tag a:hover,
+.tag a:active {
+  text-decoration: none !important;
+  color: var(--tag-text-color);
+}
+
+.contentDate {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: gray;
 }
 
 @media screen and (max-width: 50em) {
