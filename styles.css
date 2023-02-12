@@ -199,20 +199,24 @@ div.projrow-text {
 .nav-item {
   padding: 5px;
   transition: 0.3s;
+  border-color: var(--main-bg-color);
+  border-style: solid;
+  border-radius: 5px;
 }
 
 .nav-item:hover,
 .nav-item.selected {
-  border-radius: 5px;
   background-color: var(--card-bg-color);
-  box-shadow: var(--normal-shadow);
+  border-color: var(--link-color);
+  border-style: solid;
 }
 
 .tipJar:hover {
   border-radius: 5px;
   background: green !important;
   color: white !important;
-  box-shadow: var(--normal-shadow)
+  box-shadow: var(--normal-shadow);
+  border-color: green;
 }
 
 video {
