@@ -28,6 +28,7 @@
     padding: 0.5em;
     color: #383a42;
     background: #fafafa;
+    border-radius: 10px;
   }
   
   .hljs-comment,
