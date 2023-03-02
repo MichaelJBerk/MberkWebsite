@@ -61,13 +61,12 @@ div.head-nav {
   display: flex;
 }
 
-div.head-nav ul,
 li {
   display: inline;
 }
 
-div.head-nav li {
-  padding: 16px;
+div.head-nav .nav-item {
+  
 }
 
 div.main,
@@ -202,6 +201,11 @@ div.projrow-text {
   border-color: var(--main-bg-color);
   border-style: solid;
   border-radius: 5px;
+  /* display: inline; */
+}
+
+.nav-item-box {
+  padding: 16px;
 }
 
 .nav-item:hover,
@@ -211,7 +215,7 @@ div.projrow-text {
   border-style: solid;
 }
 
-.tipJar:hover {
+.tipJar .nav-item:hover {
   border-radius: 5px;
   background: green !important;
   color: white !important;
@@ -278,11 +282,27 @@ code {
 
 @media screen and (max-width: 50em) {
   div.page {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 50em) {
+
+  div.head {
+    display: flex;
+    flex-direction: column;
+  }
+  div.head-title {
+    text-align: center;
+  }
+
+  div.head-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-item-box {
+    padding: 5px;
+  }
 
   div.projlist {
     display: block !important;
